@@ -1,0 +1,59 @@
+.\"
+.\" Copyright (c) 2022 KusaReMKN.  All rights reserved.
+.\"     Available under the BSD 2-Clause License.
+.\"
+.Dd 23th February 2022
+.Dt L2ADDR 1
+.Os
+.Sh NAME
+.Nm l2addr
+.Nd list MAC addresses of network interfaces
+.Sh SYNOPSIS
+.Nm
+.Sh DESCRIPTION
+The
+.Nm
+utility displays a list of the MAC addresses
+of network interfaces on your system.
+.Sh EXIT STATUS
+.Ex -std
+.Sh SEE ALSO
+.Xr getifaddrs 3
+.Pp
+.Xr ethers 3 ,
+.In net/if_dl.h
+on FreeBSD
+.Pp
+.Xr ether_aton 3 ,
+.Xr packet 7
+on Linux
+.Sh COPYRIGHT
+Copyright \(co 2022 KusaReMKN.
+All rights reserved.
+.Pp
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+.Bl -enum
+.It
+Redistributions of source code must retain the above copyright notice, this
+list of conditions and the following disclaimer.
+.It
+Redistributions in binary form must reproduce the above copyright notice, this
+list of conditions and the following disclaimer in the documentation and/or
+other materials provided with the distribution.
+.El
+.Pp
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+.Dq AS IS
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+.Sh BUGS
+On Linux,
+the display of MAC addresses with single-digit fields may be corrupted.
